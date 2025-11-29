@@ -450,7 +450,6 @@ int main() {
     
     std::cout << "Server listening on port 8080..." << std::endl;
     
-    
 
     // ----- SELECT() LOOP -----
 
@@ -509,9 +508,6 @@ int main() {
 
             std::cout << "New client connected (socket " << new_socket << ")" << std::endl;
             
-            // Creates prompt for entering username to clients
-            std::string prompt = "Enter your username: ";
-            send(new_socket, prompt.c_str(), prompt.length(), 0);
         }
 
         // ---- Check all clients for activity ----

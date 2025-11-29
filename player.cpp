@@ -41,7 +41,9 @@ void recieveMessage() {
         }
 
         // Displays message and reprint for input prompt
-        std::cout << "\n" << buffer;
+        std::cout << "\r\033[K";
+        // std::cout << "\n" << buffer;
+        std::cout << buffer << std::endl;
         std::cout << "You: " << std::flush;
     }
 }
