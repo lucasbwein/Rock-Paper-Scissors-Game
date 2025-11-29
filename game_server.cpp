@@ -534,7 +534,7 @@ int main() {
                 int valread = read(socket, buffer, BUFFER_SIZE);
 
                 // Checks for disconnection
-                if (valread <= 0) { // if 0 = disctionection, 0 > means error
+                if (valread <= 0) { // if 0 = disconnection, 0 > means error
                     // Client disconnected
                     handleDisconnect(socket);
                 } else {     

@@ -14,8 +14,8 @@ using threads: main thread for user input, background thread for server messages
 #include <thread>
 
 // Global: allows intertwine between threads
-int sock_fd; // file descriptor used for connecting to server
-bool running = true; // Intializes the client running for shutdown between threads
+int sock_fd;          // file descriptor used for connecting to server
+bool running = true;  // Intializes the client running for shutdown between threads
 
 /*
 recieveMessage(): reads the messages from server,

@@ -102,10 +102,10 @@ g++ player.cpp -o player -pthread
 - **Root Cause**: Hardcoded `send()` lengths sent extra garbage bytes, including null terminators
 - **Solution**: Use `.length()` for all string sends to ensure exact byte counts
 
-**Challenge 2: Race Condition in Round Resolution**
-- **Problem**: Second player to choose wouldn't see round results
-- **Root Cause**: TCP buffered "Choice locked in!" and round result into single receive
-- **Solution**: Client properly handles multi-line messages from server
+**Challenge 2: Username Output**
+- **Problem**: Both the client and the server were handling inputing usernames causing a double output
+- **Root Cause**: Would act two ways where after client side recieves username it is prompted again
+- **Solution**: Client properly handles the username and server only stores it instead
 
 **Challenge 3: Port Already in Use**
 - **Problem**: Quick server restarts failed due to TIME_WAIT state
