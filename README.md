@@ -142,4 +142,4 @@ This project was created for learning purposes as part of my portfolio demonstra
 
 ---
 
-**Built by Lucas Weinberg**  
+**Built by Lucas Weinstein**  

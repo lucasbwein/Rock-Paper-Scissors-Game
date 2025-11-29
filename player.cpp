@@ -3,7 +3,8 @@ Rock-Paper-Scissors Game Client
 
 TCP client that connects to game server and handles bidirectional communication
 using threads: main thread for user input, background thread for server messages.
- */
+
+*/
 
 #include <iostream>
 #include <cstring>
